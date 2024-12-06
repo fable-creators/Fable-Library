@@ -1,0 +1,15 @@
+{
+    "name": "Book Builder",
+    "short_name": "Book Builder",
+    "start_url": "index.html",
+    "display": "fullscreen",
+    "background_color": "#1A0536",
+    "theme_color": "#000",
+    "description": "Fable MediaBuilder",
+    "icons": [{
+      "src": "TemplateData/icons/unity-logo-dark.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }]
+  }

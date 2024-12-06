@@ -1,0 +1,64 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False" class="settings-root">
+    <Style src="shared.uss" />
+    <Style src="screensettings.uss" />
+    <ui:VisualElement class="settings-bar">
+        <ui:VisualElement>
+            <ui:Image name="logo" class="logo" />
+        </ui:VisualElement>
+
+        <ui:VisualElement class="mute-button">
+            <ui:Button name="muteButton" class="icon-button">
+                <ui:Image name="muteIcon" class="mute-icon" />
+            </ui:Button>
+        </ui:VisualElement>
+
+        <ui:Foldout text="Settings" value="false" class="settings-dropdown">
+        <ui:VisualElement name="settingsContainer" class="settings-container hidden">
+
+            <ui:Foldout text="Audio" value="false" class="settings-section">
+                <ui:VisualElement class="content-group">
+                    <ui:Label text="Master Volume" class="label" />
+                    <ui:Slider picking-mode="Ignore" value="50" high-value="100" name="masterVolumeSlider" class="slider" />
+                    
+                    <ui:Label text="Music" class="label" />
+                    <ui:Slider picking-mode="Ignore" value="50" high-value="100" name="musicVolumeSlider" class="slider" />
+                    
+                    <ui:Label text="Sound Effects" class="label" />
+                    <ui:Slider picking-mode="Ignore" value="50" high-value="100" name="effectsVolumeSlider" class="slider" />
+                </ui:VisualElement>
+            </ui:Foldout>
+
+        <ui:Foldout text="Rendering" value="false" class="settings-section">
+            <ui:VisualElement class="content-group">
+                <ui:DropdownField label="Quality" index="1" choices="Low,Medium,High,Ultra" name="qualityDropdown" />
+                
+                <ui:VisualElement class="toggle-row">
+                    <ui:Label text="Shadows" class="label" />
+                    <ui:Toggle name="shadowsToggle" value="true" />
+                </ui:VisualElement>
+                
+                <ui:VisualElement class="toggle-row">
+                    <ui:Label text="Reflections" class="label" />
+                    <ui:Toggle name="reflectionsToggle" value="true" />
+                </ui:VisualElement>
+                
+                <ui:VisualElement class="toggle-row">
+                    <ui:Label text="Ambient Occlusion" class="label" />
+                    <ui:Toggle name="aoToggle" value="true" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:Foldout>
+
+        <ui:Foldout text="Debug" value="false" class="settings-section">
+            <ui:VisualElement class="content-group">
+                <ui:VisualElement class="toggle-row">
+                    <ui:Label text="Show Colliders" class="label" />
+                    <ui:Toggle name="collidersToggle" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:Foldout>
+    </ui:VisualElement>
+        </ui:Foldout>
+        
+    </ui:VisualElement>
+</ui:UXML>

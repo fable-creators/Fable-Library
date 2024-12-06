@@ -1,0 +1,115 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UIBuilder/bookbuilder.uss?fileID=7433441132597879392&amp;guid=b965475e8f2ba46428bfcb54fba7eedb&amp;type=3#bookbuilder" />
+    <ui:ScrollView class="container">
+        <ui:VisualElement class="section action-bar">
+            <ui:VisualElement class="button-group">
+                <ui:Button name="undoButton" class="icon-button">
+                    <ui:Image class="icon" />
+                    <ui:Label text="Undo" />
+                </ui:Button>
+                <ui:Button name="redoButton" class="icon-button">
+                    <ui:Image class="icon" />
+                    <ui:Label text="Redo" />
+                </ui:Button>
+            </ui:VisualElement>
+            <ui:VisualElement class="button-group">
+                <ui:Button name="saveButton" class="primary-button">
+                    <ui:Image class="icon" />
+                    <ui:Label text="Save" />
+                </ui:Button>
+                <ui:Button name="loadButton" class="secondary-button">
+                    <ui:Label text="Load" />
+                </ui:Button>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement class="section">
+            <ui:Label text="Media Type" class="section-header" />
+            <ui:DropdownField name="mediaTypeDropdown" class="full-width" />
+        </ui:VisualElement>
+        <ui:VisualElement class="section">
+            <ui:Label text="Dimensions" class="section-header" />
+            <ui:VisualElement class="input-group">
+                <ui:Label text="Width (cm)" />
+                <ui:FloatField name="widthField" />
+            </ui:VisualElement>
+            <ui:VisualElement class="input-group">
+                <ui:Label text="Height (cm)" />
+                <ui:FloatField name="heightField" />
+            </ui:VisualElement>
+            <ui:VisualElement class="input-group">
+                <ui:Label text="Thickness (cm)" />
+                <ui:FloatField name="thicknessField" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement class="section">
+            <ui:Label text="Page Settings" class="section-header" />
+            <ui:VisualElement class="input-group">
+                <ui:Label text="Number of Pages" />
+                <ui:IntegerField name="pageCountField" />
+            </ui:VisualElement>
+            <ui:VisualElement class="input-group">
+                <ui:Label text="Page Thickness" />
+                <ui:Slider name="pageThicknessSlider" />
+            </ui:VisualElement>
+            <ui:VisualElement class="input-group">
+                <ui:Label text="Page Stiffness" />
+                <ui:Slider name="pageStiffnessSlider" />
+            </ui:VisualElement>
+            <ui:Toggle name="enablePhysicsToggle" text="Enable Page Physics" />
+        </ui:VisualElement>
+        <ui:VisualElement class="section">
+            <ui:Label text="Book Structure" class="section-header" />
+            <ui:TreeView name="bookStructureTree" class="book-structure" />
+            <ui:Button text="Add Page" name="addPageButton" class="add-button" />
+        </ui:VisualElement>
+        <ui:VisualElement class="section">
+            <ui:Label text="Materials &amp; Colors" class="section-header" />
+            <ui:DropdownField name="coverMaterialDropdown" label="Cover Material" />
+            <ui:ColorField name="coverColorField" label="Cover Color" />
+            <ui:DropdownField name="pageMaterialDropdown" label="Page Material" />
+            <ui:ColorField name="pageColorField" label="Page Color Tint" />
+            <ui:Slider name="roughnessSlider" label="Cover Roughness" />
+            <ui:Slider name="metallicSlider" label="Cover Metallic" />
+        </ui:VisualElement>
+        <ui:VisualElement class="section">
+            <ui:Label text="Page Content" class="section-header" />
+            <ui:DropdownField name="contentTypeDropdown" label="Content Type" />
+            <ui:TextField name="contentTextField" multiline="true" class="content-text-area" />
+            <ui:DropdownField name="fontDropdown" label="Font" />
+            <ui:VisualElement class="text-controls">
+                <ui:IntegerField name="fontSizeField" />
+                <ui:Button text="B" name="boldButton" class="format-button" />
+                <ui:Button text="I" name="italicButton" class="format-button" />
+            </ui:VisualElement>
+            <ui:Box name="imageDropArea" class="drop-area">
+                <ui:Label text="Drop image here or click to upload" />
+            </ui:Box>
+        </ui:VisualElement>
+        <ui:VisualElement class="section">
+            <ui:Label text="Audio" class="section-header" />
+            <ui:VisualElement class="input-group">
+                <ui:Label text="Page Turn Sound" />
+                <ui:DropdownField name="pageTurnSoundDropdown" />
+                <ui:Button name="uploadSoundButton" class="upload-button" />
+            </ui:VisualElement>
+            <ui:VisualElement class="input-group">
+                <ui:Label text="Background Music" />
+                <ui:DropdownField name="backgroundMusicDropdown" />
+                <ui:Button name="uploadMusicButton" class="upload-button" />
+            </ui:VisualElement>
+            <ui:Slider name="effectsVolumeSlider" label="Effects Volume" />
+            <ui:Slider name="musicVolumeSlider" label="Music Volume" />
+        </ui:VisualElement>
+        <ui:VisualElement class="section">
+            <ui:Label text="Effects" class="section-header" />
+            <ui:Slider name="pageCurlSlider" label="Page Curl Amount" />
+            <ui:Slider name="edgeWearSlider" label="Edge Wear" />
+            <ui:Toggle name="dogEarsToggle" text="Enable Dog-ears" />
+        </ui:VisualElement>
+        <ui:VisualElement class="section">
+            <ui:Label text="Export Options" class="section-header" />
+            <ui:DropdownField name="exportTypeDropdown" />
+            <ui:Button text="Export Project" name="exportButton" class="primary-button" />
+        </ui:VisualElement>
+    </ui:ScrollView>
+</ui:UXML>

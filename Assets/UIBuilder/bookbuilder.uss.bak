@@ -1,0 +1,105 @@
+.container {
+    padding: 12px;
+    position: absolute;
+    right: 0;
+    overflow: visible;
+    width: 350px;
+    height: 100%;
+    top: 0;
+    background-color: rgba(240, 240, 240, 0);
+    -unity-background-scale-mode: scale-to-fit;
+    max-width: 350px;
+}
+
+.section {
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    padding: 12px;
+    margin-bottom: 12px;
+}
+
+.section-header {
+    -unity-font-style: bold;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.action-bar {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.button-group {
+    flex-direction: row;
+    gap: 4px;
+}
+
+.icon-button {
+    padding: 6px;
+    border-width: 1px;
+    border-radius: 4px;
+}
+
+.primary-button {
+    background-color: rgb(59, 130, 246);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+.secondary-button {
+    background-color: rgb(107, 114, 128);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+.input-group {
+    margin-bottom: 8px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.book-structure {
+    border-width: 1px;
+    border-radius: 4px;
+    min-height: 100px;
+}
+
+.add-button {
+    margin-top: 8px;
+    color: rgb(59, 130, 246);
+}
+
+.content-text-area {
+    min-height: 80px;
+    margin-bottom: 8px;
+}
+
+.text-controls {
+    flex-direction: row;
+    gap: 4px;
+    margin-bottom: 8px;
+}
+
+.format-button {
+    width: 30px;
+    height: 30px;
+}
+
+.drop-area {
+    border-width: 2px;
+    border-radius: 4px;
+    border-style: dashed;
+    padding: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.upload-button {
+    width: 30px;
+    height: 30px;
+}

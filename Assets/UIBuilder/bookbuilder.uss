@@ -1,0 +1,147 @@
+.action-bar {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+.button-group {
+    flex-direction: row;
+    gap: 4px;
+}
+
+.icon-button {
+    background-color: var(--surface-color);
+    border-width: 1px;
+    border-color: var(--border-color);
+    border-radius: 4px;
+    padding: 8px 12px;
+    color: var(--primary-color);
+}
+
+.icon-button:hover {
+    background-color: var(--accent-color);
+    opacity: 0.9;
+}
+
+.input-group {
+    margin-bottom: 8px;
+}
+
+.unity-base-field__label {
+    color: rgb(180, 170, 160);
+    min-width: 100px;
+}
+
+.book-structure {
+    background-color: var(--background-color);
+    border-width: 1px;
+    border-color: var(--border-color);
+    border-radius: 4px;
+    color: var(--primary-color);
+}
+
+.format-button {
+    width: 30px;
+    height: 30px;
+    background-color: var(--surface-color);
+    border-width: 1px;
+    border-color: var(--border-color);
+    border-radius: 4px;
+    color: var(--primary-color);
+}
+
+.format-button:hover {
+    background-color: var(--background-color);
+}
+
+.content-text-area {
+    min-height: 80px;
+    background-color: var(--background-color);
+    border-width: 1px;
+    border-color: var(--border-color);
+    border-radius: 4px;
+    color: var(--primary-color);
+}
+
+.logo-container {
+    padding: 16px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color);
+    border-bottom-width: 1px;
+    border-bottom-color: var(--border-color);
+    margin-bottom: 16px;
+}
+
+.logo {
+    width: 200px;
+    height: 100px;
+    -unity-background-scale-mode: scale-to-fit;
+    background-image: resource('Textures/Fable_Logo');
+    -unity-background-image-tint-color: var(--text-primary);
+    flex-shrink: 0;
+}
+
+.settings-container {
+    width: 400px;
+}
+
+.settings-header {
+    width: 400px;
+}
+
+.settings-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    gap: 4px;
+}
+
+.icon-button {
+    width: 48px;
+    height: 48px;
+    border: none;
+    padding: 4px;
+    background-color: var(--accent-color);
+}
+
+.icon-button:hover {
+    opacity: 0.9;
+}
+
+.settings-icon {
+    width: 100%;
+    height: 100%;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.mute-icon {
+    width: 100%;
+    height: 100%;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.settings-icon {
+    --unity-image: resource('Textures/Icons/snackbar');
+    background-image: resource('Textures/Icons/snackbar');
+}
+
+.mute-icon {
+    -unity-background-scale-mode: scale-to-fit;
+    background-image: resource('Textures/Icons/mute');
+    -unity-background-image-tint-color: var(--text-primary);
+    flex-shrink: 0;
+}
+
+.unity-scroll-view--vertical > #unity-content-and-vertical-scroll-container > .unity-scroll-view__vertical-scroller > #unity-slider > .unity-slider__input > #unity-drag-container > #unity-dragger {
+    width: 24px;
+    height: 20px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    left: auto;
+    right: -8px;
+}

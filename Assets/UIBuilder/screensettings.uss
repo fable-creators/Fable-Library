@@ -1,0 +1,65 @@
+.logo-container {
+    padding: 16px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color);
+    border-bottom-width: 1px;
+    border-bottom-color: var(--border-color);
+    margin-bottom: 16px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    -unity-background-scale-mode: scale-to-fit;
+    background-image: resource('Textures/Fable_Logo');
+    -unity-background-image-tint-color: var(--text-primary);
+    flex-shrink: 0;
+    margin-bottom: 20px;
+}
+
+.settings-root {
+    display: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.settings-bar {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.settings-container {
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 20px;
+    
+}
+
+.settings-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    gap: 4px;
+}
+
+.settings-icon {
+    --unity-image: resource('Textures/Icons/snackbar');
+    background-image: resource('Textures/Icons/snackbar');
+}
+
+.mute-button {
+    width: 64px;
+    height: 64px;
+    border-radius: 4px;
+}
+
+.mute-icon {
+    background-image: resource('Textures/Icons/mute');
+    -unity-background-image-tint-color: var(--text-primary);
+    width: 24px;
+    height: 24px;
+}

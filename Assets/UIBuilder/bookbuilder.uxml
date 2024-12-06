@@ -1,0 +1,91 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UIBuilder/bookbuilder.uss?fileID=7433441132597879392&amp;guid=b965475e8f2ba46428bfcb54fba7eedb&amp;type=3#bookbuilder" />
+    <Style src="project://database/Assets/UIBuilder/shared.uss?fileID=7433441132597879392&amp;guid=a85981b21b90f4e48a03f9bc1dd15d3f&amp;type=3#shared" />
+    <ui:ScrollView class="container">
+        <ui:VisualElement name="stepIndicator" class="step-indicator">
+            <ui:Label text="Step: " name="currentStepLabel" class="step-label" />
+            <ui:Button text="Previous" name="prevStepButton" class="nav-button" />
+            <ui:Button text="Next" name="nextStepButton" class="nav-button" />
+        </ui:VisualElement>
+        <ui:VisualElement name="step1" class="step-container">
+            <ui:Label text="Welcome to Book Builder" class="section-header" />
+            <ui:Button text="Start New Project" name="startButton" class="primary-button" />
+            <ui:Button text="Load Existing Project" name="loadButton" class="upload-button" />
+            <ui:Button text="Options" name="optionsButton" class="upload-button" />
+        </ui:VisualElement>
+        <ui:VisualElement name="step2" class="step-container" style="display: none;">
+            <ui:Label text="Choose Initial Settings" class="section-header" />
+            <ui:DropdownField name="presetRoomDropdown" label="Select Room Preset" choices="Pirate Room,Space Room,Lo-Fi Room" index="0" />
+            <ui:DropdownField name="presetLayoutDropdown" label="Select Layout Preset" choices="Book" index="0" />
+        </ui:VisualElement>
+        <ui:VisualElement name="step3" class="step-container" style="display: none;">
+            <ui:Label text="Load Previous Settings" class="section-header" />
+            <ui:Button text="Import JSON" name="importJsonButton" class="primary-button" />
+            <ui:Label text="Or select from previous settings:" class="section-header" />
+            <ui:ListView name="previousSettingsList" />
+        </ui:VisualElement>
+        <ui:VisualElement name="step4" class="step-container" style="display: none;">
+            <ui:Label text="Select Media Type" class="section-header" />
+            <ui:DropdownField name="mediaTypeDropdown" choices="Book,Magazine,Newspaper,Poster,Manga" />
+            <ui:VisualElement name="dimensionsContainer" class="section">
+                <ui:Label text="Basic Dimensions" class="section-header" />
+                <ui:FloatField name="widthField" label="Width (cm)" enabled="false" />
+                <ui:FloatField name="heightField" label="Height (cm)" enabled="false" />
+                <ui:FloatField name="thicknessField" label="Thickness (cm)" enabled="false" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="step5" class="step-container" style="display: none;">
+            <ui:Label text="Materials &amp; Colors" class="section-header" />
+            <ui:DropdownField name="coverMaterialDropdown" label="Cover Material" index="0" choices="Default" />
+            <ui:DropdownField name="pageMaterialDropdown" label="Page Material" index="0" choices="Default" />
+            <ui:Slider name="roughnessSlider" label="Cover Roughness" style="display: none;" />
+            <ui:Slider name="metallicSlider" label="Cover Metallic" style="display: none;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="step6" class="step-container" style="display: none;">
+            <ui:Label text="Book Structure" class="section-header" />
+            <ui:TreeView name="bookStructureTree" />
+            <ui:Button text="Add Page" name="addPageButton" />
+            <ui:Label text="Page Content" class="section-header" />
+            <ui:DropdownField name="contentTypeDropdown" label="Content Type" />
+            <ui:TextField name="contentTextField" multiline="true" />
+            <ui:Box name="imageDropArea" class="drop-area">
+                <ui:Label text="Drop image here or click to upload" />
+            </ui:Box>
+        </ui:VisualElement>
+        <ui:VisualElement name="step7" class="step-container" style="display: none;">
+            <ui:Label text="Audio" class="section-header" />
+            <ui:VisualElement class="input-group">
+                <ui:Label text="Page Turn Sound" class="unity-base-field__label" />
+                <ui:VisualElement class="horizontal-group">
+                    <ui:DropdownField name="pageTurnSoundDropdown" index="0" choices="Default,Custom,None" />
+                    <ui:Button name="uploadSoundButton" class="upload-button">
+                        <ui:Image class="upload-icon" />
+                        <ui:Label text="Upload" />
+                    </ui:Button>
+                </ui:VisualElement>
+                <ui:Label name="pageTurnFileName" class="file-name" />
+            </ui:VisualElement>
+            <ui:VisualElement class="input-group">
+                <ui:Label text="Background Music" class="unity-base-field__label" />
+                <ui:VisualElement class="horizontal-group">
+                    <ui:DropdownField name="backgroundMusicDropdown" choices="None,Custom" index="0" />
+                    <ui:Button name="uploadMusicButton" class="upload-button">
+                        <ui:Image class="upload-icon" />
+                        <ui:Label text="Upload" />
+                    </ui:Button>
+                </ui:VisualElement>
+                <ui:Label name="backgroundMusicFileName" class="file-name" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="step8" class="step-container" style="display: none;">
+            <ui:Label text="Export Project" class="section-header" />
+            <ui:DropdownField name="exportTypeDropdown" label="Export Format" />
+            <ui:TextField name="exportPathField" label="Export Location" />
+            <ui:Button text="Export" name="exportButton" class="primary-button" />
+        </ui:VisualElement>
+        <ui:VisualElement class="action-bar">
+            <ui:Button text="Save Progress" name="saveProgressButton" class="primary-button" />
+            <ui:Button text="Cancel" name="cancelButton" />
+        </ui:VisualElement>
+    </ui:ScrollView>
+</ui:UXML>

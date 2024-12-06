@@ -1,0 +1,36 @@
+{
+    "mediaType": "Custom",
+    "pageWidth": 0.4000000059604645,
+    "pageLength": 0.30000001192092898,
+    "pageHeight": 0.0032500000670552255,
+    "bookThickness": 0.04479999840259552,
+    "pageGap": 0.0031999999191612007,
+    "spineRadius": 0.48500001430511477,
+    "numPages": 15,
+    "widthSegs": 30,
+    "lengthSegs": 8,
+    "heightSegs": 1,
+    "autoFit": true,
+    "autoFitSize": {
+        "x": 1.0299999713897706,
+        "y": 1.2000000476837159,
+        "z": 1.0299999713897706
+    },
+    "spineScale": 1.0,
+    "coverScale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+    },
+    "edgeUVSize": 0.2199999988079071,
+    "edgeUVOffset": 0.20999999344348908,
+    "headbandLength": 0.8700000047683716,
+    "headbandRadius": 0.004000000189989805,
+    "headbandSegs": 8,
+    "headbandSides": 8,
+    "spineFabricLength": 0.8999999761581421,
+    "spineFabricWidth": 0.30000001192092898,
+    "spineFabricThickness": 0.006000000052154064,
+    "id": "b612158c-130a-4c20-92ea-e08ebb39c362",
+    "name": "Book Project"
+}

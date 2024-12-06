@@ -1,0 +1,32 @@
+{
+    "mediaType": "Newspaper",
+    "projectName": "Book Project",
+    "lastModified": "2024-12-03 19:12:55",
+    "version": "1.0",
+    "pageWidth": 0.20999999344348908,
+    "pageLength": 0.2970000207424164,
+    "pageHeight": 0.0001500000071246177,
+    "bookThickness": 0.020750001072883607,
+    "pageGap": 0.0002500000118743628,
+    "spineRadius": 0.3499999940395355,
+    "numPages": 84,
+    "widthSegs": 35,
+    "lengthSegs": 10,
+    "heightSegs": 1,
+    "autoFit": false,
+    "autoFitSize": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+    },
+    "spineScale": 0.0,
+    "coverScale": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "edgeUVSize": 0.15000000596046449,
+    "edgeUVOffset": 0.14000000059604646,
+    "coverMaterialType": "",
+    "pageMaterialType": "Unlit/Texture"
+}

@@ -1,0 +1,46 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <Style src="shared.uss" />
+    <Style src="pagelayout.uss" />
+    <ui:VisualElement name="layoutEditorRoot" class="layout-editor-root">
+        <ui:ScrollView class="scroll-container">
+            <ui:VisualElement class="toolbar">
+                <ui:VisualElement class="button-group">
+                    <ui:Button name="closeButton" class="icon-button">
+                        <ui:Label text="X" />
+                    </ui:Button>
+                </ui:VisualElement>
+                <ui:VisualElement class="button-group">
+                    <ui:Button name="gridToggle" class="icon-button">
+                        <ui:Label text="Grid" />
+                    </ui:Button>
+                    <ui:Button name="snapToggle" class="icon-button">
+                        <ui:Label text="Snap" />
+                    </ui:Button>
+                </ui:VisualElement>
+                <ui:Button name="saveButton" text="Save Layout" class="primary-button" />
+            </ui:VisualElement>
+            
+            <ui:VisualElement class="content-container">
+                <ui:VisualElement class="components-side">
+                    <ui:Label text="Components" class="section-header" />
+                    <ui:VisualElement class="components-panel">
+                        <ui:Button name="addTextButton" class="component-button">
+                            <ui:Label text="Text Block" />
+                        </ui:Button>
+                        <ui:Button name="addImageButton" class="component-button">
+                            <ui:Label text="Image" />
+                        </ui:Button>
+                        <ui:Button name="addButtonButton" class="component-button">
+                            <ui:Label text="Button" />
+                        </ui:Button>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                
+                <ui:VisualElement class="grid-side">
+                    <ui:Label text="Layout Grid" class="section-header" />
+                    <ui:VisualElement name="layoutGrid" class="layout-grid" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:ScrollView>
+    </ui:VisualElement>
+</ui:UXML>

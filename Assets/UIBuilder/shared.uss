@@ -1,0 +1,248 @@
+
+@font-face {
+    font-family: "Cinzel";
+    src: url("Fonts/Cinzel-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Exo2";
+    src: url("Fonts/Exo2-Regular.ttf");
+}
+
+:root {
+    /* Color Palette */
+    --sand: #F6B686;
+    --coffee: #66321A;
+    --sky: #CAF2FC;
+    --grape: #93377C;
+    --plum: #301A4E;
+    --midnight: #1A0536;
+
+    --primary-color: var(--coffee);
+    --primary-hover: var(--sand);
+    --secondary-color: var(--sky);
+    --accent-color: var(--grape);
+    --background-color: var(--midnight);
+    --surface-color: var(--plum);
+    --text-primary: var(--sky);
+    --text-secondary: var(--sand);
+    --border-color: var(--coffee);
+    --error-color: var(--grape);
+    --success-color: var(--plum);
+
+    /* Typography */
+    --heading-font: 'Cinzel-Regular';
+    --body-font: 'Exo2-Regular';
+    --font-size-small: 12px;
+    --font-size-base: 14px;
+    --font-size-large: 16px;
+    --font-size-xlarge: 20px;
+}
+
+/* Base text styles */
+Label, TextField, Button, Toggle, DropdownField, .unity-base-field__input {
+    font-family: Exo2;
+    font-size: var(--font-size-base);
+    color: var(--text-primary);
+}
+
+/* Heading styles */
+.section-header, .unity-text-element__title, .unity-heading {
+    font-family: Cinzel;
+    font-size: var(--font-size-large);
+    color: var(--text-secondary);
+    margin: 8px 0;
+    -unity-font-style: bold;
+}
+
+/* Typography */
+.section-header {
+    font-family: Cinzel;  /* Use the heading font */
+    font-size: var(--font-size-large);
+    color: var(--text-secondary);
+    -unity-font-style: bold;
+    margin: 8px 0;
+    padding-left: 4px;
+    -unity-text-align: middle-left;
+}
+
+/* Input Fields */
+TextField, FloatField, IntegerField {
+    margin: 4px 0;
+}
+
+.unity-base-field__input {
+    background-color: var(--surface-color);
+    border-color: var(--border-color);
+    border-width: 1px;
+    border-radius: 4px;
+    padding: 6px;
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    color: var(--text-primary);
+}
+
+.unity-base-field__input:hover {
+    border-color: var(--accent-color);
+}
+
+.unity-base-field__input:focus {
+    border-color: var(--primary-color);
+}
+
+/* Buttons */
+Button {
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    border-width: 0;
+    padding: 8px 16px;
+    margin: 4px;
+    color: white;
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+}
+
+Button:hover {
+    background-color: var(--primary-hover);
+}
+
+.primary-button {
+    background-color: var(--accent-color);
+}
+
+.secondary-button {
+    background-color: var(--secondary-color);
+}
+
+/* Dropdowns */
+DropdownField {
+    margin: 4px 0;
+}
+
+.unity-popup-field__input {
+    background-color: var(--surface-color);
+    border-color: var(--border-color);
+    border-width: 1px;
+    border-radius: 4px;
+    padding: 6px;
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    color: var(--text-primary);
+}
+
+/* Sections */
+.section {
+    background-color: var(--surface-color);
+    border-radius: 8px;
+    padding: 16px;
+    margin: 8px 0;
+    border-width: 1px;
+    border-color: var(--border-color);
+}
+
+/* Sliders */
+Slider {
+    margin: 8px 0;
+}
+
+.unity-slider__input {
+    font-family: var(--font-family);
+    font-size: var(--font-size-small);
+}
+
+.unity-base-slider__dragger {
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+}
+
+.unity-base-slider__tracker {
+    background-color: var(--border-color);
+    height: 4px;
+    border-radius: 2px;
+}
+
+/* Toggle */
+Toggle {
+    margin: 8px 0;
+}
+
+.unity-toggle__checkmark {
+    background-color: var(--surface-color);
+    border-color: var(--border-color);
+    border-width: 1px;
+    border-radius: 4px;
+}
+
+.unity-toggle__input:checked .unity-toggle__checkmark {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+/* Tree View */
+.unity-tree-view__item {
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    color: var(--text-primary);
+    padding: 4px 8px;
+}
+
+.unity-tree-view__item:hover {
+    background-color: var(--background-color);
+}
+
+.unity-tree-view__item--selected {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+/* Content Text Area */
+.content-text-area {
+    min-height: 100px;
+    margin: 8px 0;
+}
+
+/* Image Drop Area */
+.drop-area {
+    background-color: var(--background-color);
+    border-width: 2px;
+    border-color: var(--border-color);
+    border-radius: 8px;
+    padding: 24px;
+    margin: 8px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.drop-area-active {
+    border-color: var(--accent-color);
+}
+
+/* Format Buttons */
+.format-button {
+    padding: 4px 8px;
+    margin: 0 2px;
+    min-width: 32px;
+}
+
+.container {
+    padding: 12px;
+    position: absolute;
+    right: 0;
+    overflow: visible;
+    width: 400px;
+    height: 100%;
+    top: 0;
+    background-color: var(--surface-color);
+    -unity-background-scale-mode: scale-to-fit;
+    max-width: 400px;
+}
+
+.section {
+    background-color: var(--background-color);
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-width: 1px;
+}

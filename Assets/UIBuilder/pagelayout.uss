@@ -1,0 +1,124 @@
+.layout-editor-root {
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    width: 70%;
+    height: 70%;
+    background-color: var(--surface-color);
+    border-radius: 8px;
+    border-width: 1px;
+    border-color: var(--border-color);
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-container {
+    height: 100%;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.components-side {
+    width: 20%;
+    flex-shrink: 0;
+}
+
+.grid-side {
+    width: 80%;
+    flex-shrink: 0;
+}
+
+.toolbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background-color: var(--background-color);
+    border-radius: 6px;
+    margin-bottom: 16px;
+}
+
+.components-panel {
+    padding: 8px;
+    border-radius: 4px;
+    background-color: var(--background-color);
+    flex-direction: column;
+}
+
+.component-button {
+    margin: 4px 0;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: var(--coffee);
+    width: 100%;
+    transition: all 0.2s ease;
+}
+
+.layout-grid {
+    width: 100%;
+    min-height: 400px;
+    margin: 8px 0;
+    padding: 16px;
+    border-radius: 4px;
+    background-color: var(--sand);
+    border-width: 1px;
+    border-color: var(--sand);
+}
+
+.layout-component {
+    position: absolute;
+    min-width: 100px;
+    min-height: 50px;
+    background-color: var(--surface-color);
+    border-width: 1px;
+    border-color: var(--sand);
+    border-radius: 4px;
+    padding: 8px;
+    color: var(--text-primary);
+}
+
+
+
+.layout-component:hover {
+    border-color: var(--accent-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.layout-component.selected {
+    border-color: var(--accent-color);
+    border-width: 2px;
+}
+
+.layout-component.dragging {
+    opacity: 0.7;
+    scale: 1.05;
+}
+
+.resize-handle {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 10px;
+    height: 10px;
+    background-color: var(--sand);
+    border-radius: 0 0 4px 0;
+    cursor: se-resize;
+}
+
+.resize-handle:hover {
+    background-color: var(--coffee);
+}
+
+.button-group {
+    flex-direction: row;
+    gap: 8px;
+}
+
+.section {
+    height: 50%;
+    margin-bottom: 16px;
+}
