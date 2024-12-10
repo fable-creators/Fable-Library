@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: a76c416152772a045be977d29578e1bd
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 232107
+  packageName: Soap - ScriptableObject Architecture Pattern
+  packageVersion: 3.3.1
+  assetPath: Assets/Obvious/Soap/Core/Editor/ScriptableVariables/IntVariableDrawer.cs
+  uploadId: 707859
